@@ -1,0 +1,88 @@
+Website Purpose
+The site simulates a candidate’s first day at a fictional company (use '[Company Name]' as a placeholder), guiding them through workplace scenarios where their choices reflect alignment with core values like collaboration, innovation, and integrity.
+Candidates will receive real-time feedback, earn points based on their decisions, and get a final ‘Cultural Alignment Score’ with personalized insights.
+User Flow (Implement This Exactly)
+Welcome Screen
+Message: 'Welcome to Your First Day at [Company Name]! Today, you’ll step into the shoes of a new team member. Your choices will show how you align with our culture. Ready to begin?'
+Action: Button labeled 'Begin' to proceed.
+Avatar Selection
+Display a grid of 4-6 avatars (e.g., simple cartoon characters or customizable traits like hair color—use placeholder images if needed).
+Purpose: Adds a fun, personal touch.
+Action: Candidate clicks an avatar to select it, then clicks 'Next.'
+Meet Your Mentor
+Message: A fictional mentor named 'Alex, Senior Team Lead' says: 'Hi! I’ll guide you through your first day. Your choices matter here at [Company Name]. Let’s tackle your first task!'
+Action: Button labeled 'Let’s Go!' to proceed.
+Scenario 1: The Team Meeting
+Scenario: 'You’re in a brainstorming session. A colleague shares a vague idea. What do you do?'
+Choices (as buttons):
+A) Ask for clarification to understand better.
+B) Suggest your own idea instead.
+C) Stay quiet and let others respond.
+Feedback (shown after selection):
+A: 'Great! Asking questions shows you value teamwork.' (+10 points)
+B or C: 'Engaging more could better reflect our collaborative vibe.' (+0 points)
+Scenario 2: The Deadline Dilemma
+Scenario: 'You’re leading a project with a tight deadline, but a teammate is falling behind. What’s your move?'
+Choices:
+A) Offer to help them catch up.
+B) Reassign their tasks.
+C) Tell your manager right away.
+Feedback:
+A: 'Awesome! Helping out shows accountability and support.' (+10 points)
+B or C: 'Jumping to reassign or report might miss a chance to build the team.' (+0 points)
+Scenario 3: The Innovation Challenge
+Scenario: 'Your team’s stuck on a problem. You have a risky, creative idea. What do you do?'
+Choices:
+A) Share it and encourage exploration.
+B) Keep it to yourself to avoid failure.
+C) Wait for someone else to step up.
+Feedback:
+A: 'Bold choice! We love ideas that push boundaries.' (+10 points)
+B or C: 'Holding back might miss an innovative spark—take the leap!' (+0 points)
+Scenario 4: The Feedback Session
+Scenario: 'Your manager gives constructive feedback. How do you respond?'
+Choices:
+A) Thank them and ask for improvement tips.
+B) Explain your decisions.
+C) Feel discouraged and doubt yourself.
+Feedback:
+A: 'Perfect! Embracing feedback is how we grow.' (+10 points)
+B or C: 'Staying open to growth could align you even more with us.' (+0 points)
+Final Summary
+Display the total score (e.g., 28/40).
+Alignment Level (based on score):
+35-40: 'Cultural Champion'
+25-34: 'Strong Fit'
+15-24: 'Emerging Fit'
+0-14: 'Needs Alignment'
+Feedback Example: 'You scored 28/40. You shine in collaboration and accountability but could take more risks to spark innovation!'
+Action: Buttons for 'Finish' or 'Learn More About [Company Name].'
+Optional Next Steps
+Options: Buttons for 'Replay the Assessment,' 'Explore Our Culture,' or 'Apply Now.'
+Website Features
+Single-Page Application (SPA): Use React or vanilla JavaScript to create smooth transitions between sections (e.g., hide/show components based on progress).
+Avatar Selection: A grid of clickable images; store the selected avatar in state.
+Mentor Interaction: A chat-like interface where mentor messages appear as the user advances.
+Scenarios: Each scenario is a component with a description and choice buttons. Show feedback immediately after a choice is made.
+Scoring System: Track the score in a global state (e.g., React state or a JavaScript variable). Update it based on choices and display it in the final summary.
+Final Summary: A results screen with the score, alignment level, and tailored feedback.
+Design Requirements
+Professional Yet Engaging: Use a modern CSS framework like Tailwind CSS for a clean, responsive layout.
+Color Scheme: Use a generic, neutral palette with accents (e.g., #4CAF50 for positive feedback, #333 for text). Optionally, allow customization for company branding later.
+Fonts: Use a professional, readable font like Inter or Roboto.
+Accessibility: Ensure high contrast, alt text for images, and keyboard navigation support.
+Mobile-Friendly: Must work seamlessly on desktop and mobile.
+Technical Requirements
+Frontend: Build with HTML, CSS, and JavaScript. Use React if possible; otherwise, vanilla JS is acceptable.
+State Management: Track progress, avatar choice, and score using local state.
+No Backend: The experience is fully client-side with no data storage.
+Deployment: Ensure the site can be hosted on a free platform like GitHub Pages, Netlify, or Vercel.
+Deliverables
+A fully functional SPA website with all features implemented.
+Source code in a clear, commented format (e.g., separate HTML, CSS, JS files or a React project structure).
+A README file with instructions to run the website and a brief overview for recruiters (e.g., 'This gamified culture fit assessment showcases my skills in JavaScript, UI/UX design, and state management').
+Bonus (If Feasible)
+Add a progress bar showing how many scenarios remain.
+Include subtle animations (e.g., fade-in feedback or confetti for scores above 35).
+Allow replaying the assessment from the final screen.
+Please provide the complete code or a live demo link. Let me know if you need clarification!"
