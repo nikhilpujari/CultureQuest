@@ -24,13 +24,13 @@ if [ ! -f "Procfile" ]; then
   echo "web: npm start" > Procfile
 fi
 
-# # Initialize git if not already done
-# if [ ! -d ".git" ]; then
-#   echo "Initializing git repository..."
-#   git init
-#   git add .
-#   git commit -m "Initial commit for Heroku deployment"
-# fi
+# Initialize git if not already done
+if [ ! -d ".git" ]; then
+  echo "Initializing git repository..."
+  git init
+  git add .
+  git commit -m "Initial commit for Heroku deployment"
+fi
 
 echo "Done! Now you can run the following commands to deploy to Heroku:"
 echo ""

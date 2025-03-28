@@ -180,7 +180,7 @@ const Home: React.FC = () => {
   return (
     <>
       <style>{keyframes}</style>
-      <div className="container mx-auto px-4 py-8 max-w-3xl">
+      <div className="container mx-auto px-4 py-8 max-w-3xl min-h-[calc(100vh-40px)]">
         <ProgressBar currentScreen={currentScreen} />
         {renderCurrentScreen()}
         {showTimer && !timerExpired && (
@@ -190,6 +190,9 @@ const Home: React.FC = () => {
           />
         )}
       </div>
+      <footer className="w-full text-center py-2 text-sm text-gray-500 mt-auto">
+        Made by <a href="https://nikhilpujari.in" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition-colors">nikhilpujari.in</a>
+      </footer>
     </>
   );
 };
